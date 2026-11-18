@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "大肥鱼 in DSH",
+    "description": "Adds a third conversation view beside Chat and Trajectory. The view is a generated cozy counter: 大肥鱼 stands behind it, a tabletop sign shows the real session state (idle, thinking, running a tool, waiting for approval, or last error), the latest reply sits on the desk, and images/files from that reply appear as picture frames and file folders. Click a path-backed frame or folder to open it in the right sidebar; click an attachment image to preview it. Select 大肥鱼 in DSH from the conversation view tabs; the normal Chat tab keeps the full transcript and formatting."
+  }
+}

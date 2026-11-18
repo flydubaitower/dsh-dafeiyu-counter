@@ -1,0 +1,52 @@
+{
+  "name": "dsh-dafeiyu-counter",
+  "version": "0.1.2",
+  "description": "A third conversation view for DSH: 大肥鱼 in DSH, a full-state 2K character scene with a tabletop status sign, the latest reply on the desk, and picture-frame/file-folder attachments.",
+  "license": "MIT",
+  "author": "DSHClientCharacter contributors",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "cordis",
+    "deepseek-harness",
+    "conversation",
+    "character",
+    "desktop-pet"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./assets/*": "./lib/assets/*",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib/assets",
+    "locale/*.json",
+    "icon.png",
+    "README.md",
+    "ASSET-LICENSE.md",
+    "SECURITY.md",
+    "docs/screenshots"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

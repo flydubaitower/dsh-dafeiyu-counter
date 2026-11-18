@@ -1,0 +1,6 @@
+node_modules/
+.research/
+release/
+*.tgz
+.DS_Store
+Thumbs.db
